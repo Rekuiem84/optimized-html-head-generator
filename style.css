@@ -1,3 +1,10 @@
+:root {
+	--color-primary: #0d1117;
+	--color-secondary: #e6edf3;
+	--color-secondary-800: #dadada;
+	--color-secondary-500: #8d96a0;
+	--color-secondary-100: #282828;
+}
 *,
 *::before,
 *::after {
@@ -10,21 +17,16 @@ html {
 }
 body {
 	font-family: sans-serif;
-	background-color: var(--color-primary);
-	color: var(--color-secondary);
-}
-:root {
-	--color-primary: #0d1117;
-	--color-secondary: #e6edf3;
-	--color-secondary-800: #dadada;
-	--color-secondary-500: #8d96a0;
-	--color-secondary-100: #282828;
+	background-color: var(--color-secondary-100);
+	color: var(--color-secondary-800);
 }
 pre:empty {
 	display: none;
 }
 pre {
 	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
 	overflow: scroll;
 	border: 2px solid var(--color-secondary-500);
 	border-radius: 6px;
@@ -46,11 +48,9 @@ pre {
 }
 
 form {
-	background-color: var(--color-secondary-100);
-	color: var(--color-secondary-800);
 	padding: 1rem;
 }
-p {
+form p {
 	font-size: 2rem;
 	font-weight: bold;
 	text-transform: uppercase;
