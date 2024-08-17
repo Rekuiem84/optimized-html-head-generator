@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimize your HTML &lt;head&gt;</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <form id="form">
+    <p>General</p>
+    <div class="group">
+      <div><label for="url">URL</label><input placeholder="mon-site.fr" type="url" id="url" name="url"></div>
+      <div><label for="title">Title</label><input placeholder="Titre de mon site" type="text" id="title" name="title">
+      </div>
+      <div><label for="description">Description</label><input placeholder="Description de mon site" type="text"
+          id="description" name="description"></div>
+    </div>
+
+    <p>Style</p>
+    <div class="group">
+      <div><label for="style_path">CSS relative path</label><input placeholder="./chemin/vers/mon/fichier.css"
+          type="text" id="style_path" name="style_path">
+      </div>
+      <div><label for="favicon">Favicon relative path</label><input placeholder="./chemin/vers/mon/image.png"
+          type="text" id="favicon" name="favicon"></div>
+      <div><label for="script_path">Script relative path</label><input placeholder="./chemin/vers/mon/script.js"
+          type="text" id="script_path" name="script_path">
+      </div>
+      <div><label for="include">Inclure CSS & JS imports&nbsp;?</label><input checked type="checkbox" name="include"
+          id="include" value="yes"></div>
+      <div><label for="image_card">Card image absolute path</label><input
+          placeholder="www.url.fr/chemin/vers/mon/image.png" type="text" id="image_card" name="image_card">
+      </div>
+    </div>
+
+    <p>SEO</p>
+    <div class="group">
+      <div><label for="index_page">Indexer la page</label><input checked type="checkbox" id="index_page"
+          name="index_page" value="yes"></div>
+      <div><label for="language">Langage</label><input placeholder="fr" type="text" id="language" name="language"
+          value="fr"></div>
+      <div><label for="type">Type de l'entreprise</label><input placeholder="schema.org/docs/full for more" type="text"
+          id="type" name="type" value="LocalBusiness"></div>
+      <div><label for="name">Nom de l'entreprise</label><input placeholder="Business name" type="text" id="name"
+          name="name">
+      </div>
+      <div><label for="address_street">Adresse : rue</label><input placeholder="1234 Main Street" type="text"
+          id="address_street" name="address_street">
+      </div>
+      <div><label for="address_locality">Adresse : ville</label><input placeholder="Bordeaux" type="text"
+          id="address_locality" name="address_locality" value="Bordeaux">
+      </div>
+      <div><label for="address_region">Region, County</label><input placeholder="Pas si en France" type="text"
+          id="address_region" name="address_region"></div>
+      <div><label for="postal_code">Code postal</label><input placeholder="33000" type="number" id="postal_code"
+          name="postal_code" value="33000"></div>
+      <div><label for="country">Abbr. du pays</label><input placeholder="FR" type="text" id="country" name="country"
+          value="FR"></div>
+      <div><label for="tel">Téléphone</label><input placeholder="+33 6 70 56 35 86" type="tel" id="tel" name="tel">
+      </div>
+    </div>
+
+    <p>Google</p>
+    <div class="group">
+      <div><label for="google_verif">Google Verif</label><input placeholder="google1234567890abcdef" type="text"
+          id="google_verif" name="google_verif"></div>
+      <div><label for="gtag">Google tag manager</label><input placeholder="GTM-ABC1234" type="text" id="gtag"
+          name="gtag"></div>
+    </div>
+
+    <button type="submit">Générer</button>
+  </form>
+
+  <pre data-message="Copier"></pre>
+</body>
+
+</html>
